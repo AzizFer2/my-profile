@@ -1,0 +1,25 @@
+header{
+	background-color: #11abf33f;
+}
+#t{
+    text-align: center;
+}
+#t.hover{
+    color: blue;
+}
+nav {
+	background-color: #d9f0f5;
+	width: 30%;
+	height: 480px;
+	float: left;
+}
+section {
+	background-color: #eafafa;
+	width: 70%;
+	height: 480px;
+	float: left;
+}
+iframe {
+	width: 99%;
+	height: 470px;
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="mesStyles.css">
+    <script src="controles.js   "></script>
+    <title>Document</title>
+</head>
+<body>
+    <form action="evaluation.php" method="post" onsubmit="return verif1()">
+        <fieldset> 
+            <legend> Evaluation d'un modele</legend>
+            <table> 
+                <tr><td><label for=""> n° permis</label></td>
+                <td> <input type="number" id="np" name="np">
+                
+                </td>
+            
+                <td><label for=""> modele testé</label></td>
+                <td> <select name="model" id="liste  "> 
+                    <option value=""> choisir un modele</option>
+                    <option value="ir">wallis iris</option>
+                    <option value="wl"> wallis wolf</option>
+                    <option value="wls"> wallis 216</option>
+                </select>
+                </td>
+            
+            </tr>
+            <tr><td> <label for=""> notes attribuées</label></td>
+
+            </tr>
+            <tr>
+                <td> <label for=""> securite</label></td>
+                <td> <input type="text" name="sc" id="sc"></td>
+                <td> <label for=""> conduite</label></td>
+                <td><input type="text" name="cn" id="cn"></td>
+                <td> <label for="confort"></label></td>
+                <td> <input type="text" name="cf" id="cf"></td>
+            </tr>
+            <tr><td><label for=""> je suis pas un robot:</label></td>
+            <td> <input type="checkbox" name="ckb" id="ckb" onclick="return verif2()"></td></tr>
+            <tr>
+                <td> <input type="reset"> annuler<input type="submit"></td>
+            </tr>
+
+
+
+
+
+
+            </table>
+        </fieldset>
+    </form>
+</body>
+</html>

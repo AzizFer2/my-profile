@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="mesStyles.css">
+    <script src="controles.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <form action="enregistrement.php" method="post" onsubmit="return verif1()">
+        <fieldset>
+            <legend> enregistrement d'un testeur</legend>
+            <table>
+                <tr>
+                    <td><label for="">N Permis</label></td>
+                    <td> <input type="number" name="np" id="np"></td>
+                </tr>
+                <tr>
+                    <td><label for=""> Nom :</label></td>
+                    <td> <input type="text" name="nm" id="nm"></td>
+                </tr>
+                <tr>
+                    <td><label for="">Prenom :</label></td>
+                    <td> <input type="text" name="prn" id="prn"></td>
+                </tr>
+                <tr>
+                    <td><label for=""> genre:</label></td>
+                    <td><input type="radio" name="genre" id="genre"> Feminin<input type="radio" name="genre" id="genre"> Masculain</td>
+                </tr>
+                <tr>
+                    <td> <label for=""> ville :</label></td>
+                    <td> <select name="ville" id="">
+                        <option value="">choisir une ville</option>
+                        <option value="">Gafsa</option>
+                        <option value="">Kef</option>
+                        <option value="">Sousse</option>
+                        <option value="">Tunis</option>
+                        <option value="">Ben Arous</option>
+                        <option value="">Jandouba</option>
+                        <option value="">Gabes</option>
+                        <option value="">Manouba</option>
+                        <option value="">Carthage</option>
+                        <option value="">Sidi Bouzid</option>
+                        <option value="">Kairwean</option>
+                        <option value="">Ezzahra</option>
+                        <option value="">Monflleri</option>
+                        <option value="">Lafayette</option>
+                        </select></td>
+                </tr>
+                <tr>
+                    <td><input type="reset" value="annuler"> <input type="submit" value="ajouter" onsubmit="return verif1()"></td>
+                    
+                </tr>
+            </table>
+        </fieldset>
+    </form>
+    
+</body>
+</html>
